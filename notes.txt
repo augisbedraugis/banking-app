@@ -1,0 +1,26 @@
+1) Pilnas funkcionalumas, išskyrus VEIKIANTĮ paskyros duomenų keitimą ir pinigu pervedimą/gavimą
+	Prisijungimas su vardu ir slaptazodziu
+	Pinigu pervedimas
+	Paskyros vardo/slaptazodzio keitimas
+
+2) Duomenų bazės sukūrimas
+
+3) Duomenų bazės implementacija (čia programa 100% baigta)
+
+4) UI sutvarkymas
+
+5) papildomu funkciju implementacija
+
+W1:
+
+--------------------------
+W2:
+
+--------------------------
+W3:
+
+--------------------------
+
+
+Notification sistema?
+Transaction istorija?
