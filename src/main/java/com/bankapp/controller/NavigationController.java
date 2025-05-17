@@ -1,6 +1,7 @@
 package com.bankapp.controller;
 
 import com.bankapp.model.Account;
+import com.bankapp.view.CreateAccountView;
 import com.bankapp.view.LoginView;
 import com.bankapp.view.DashboardView;
 import com.bankapp.view.SettingsView;
@@ -32,18 +33,26 @@ public class NavigationController {
         primaryStage.setTitle("Login");
         primaryStage.show();
     }
+
     public static void switchToSettings() {
         SettingsView view = new SettingsView();
         primaryStage.setScene(view.getScene());
         primaryStage.setTitle("Settings");
     }
 
+
     public static void switchToDashboard(Account account) {
-        DashboardView view = new DashboardView(account);
-        view.getLogoutButton().setOnAction(e -> switchToLogin());
-        view.getSettingsButton().setOnAction(e -> switchToSettings(account));
-        primaryStage.setScene(view.getScene());
+        DashboardView dashboardView = new DashboardView(account);
+        primaryStage.setScene(dashboardView.getScene());
         primaryStage.setTitle("Dashboard");
+        primaryStage.show();
+    }
+
+    public static void switchToCreateAccount() {
+        CreateAccountView createAccountView = new CreateAccountView();
+        new AccountCreationController(createAccountView);  // Link controller with the view
+        primaryStage.setScene(createAccountView.getScene());
+        primaryStage.setTitle("Create New Account");
     }
 
 

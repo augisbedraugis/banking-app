@@ -1,4 +1,4 @@
-C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\controller\AccountManager.java
+C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\controller\AccountCreationController.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\controller\DashboardController.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\controller\LoginController.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\controller\NavigationController.java
@@ -9,6 +9,7 @@ C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\ma
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\model\Transaction.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\service\BankUserDAO.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\service\ConnectDB.java
+C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\CreateAccountView.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\DashboardView.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\LoginView.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\SettingsView.java

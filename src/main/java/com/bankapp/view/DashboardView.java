@@ -1,5 +1,5 @@
-
 package com.bankapp.view;
+import com.bankapp.controller.DashboardController;
 import javafx.scene.layout.HBox;
 import com.bankapp.model.Account;
 import javafx.scene.Scene;
@@ -14,7 +14,7 @@ public class DashboardView {
     private Button logoutButton = new Button("Log Out");
 
     public DashboardView(Account account) {
-        Text welcomeText = new Text("Welcome, " + account.getFullName());
+        Text welcomeText = new Text("Welcome, " + account.getName());
         Text balanceText = new Text("Balance: $" + account.getBalance());
 
         VBox layout = new VBox(12);
@@ -24,8 +24,9 @@ public class DashboardView {
 
         layout.getChildren().addAll(welcomeText, balanceText, buttonRow);
 
-
         this.scene = new Scene(layout, 300, 150);
+
+        new DashboardController(this, account);
     }
 
     public Scene getScene() {
@@ -35,6 +36,7 @@ public class DashboardView {
     public Button getLogoutButton() {
         return logoutButton;
     }
+
     public Button getSettingsButton() {
         return settingsButton;
     }

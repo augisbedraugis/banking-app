@@ -1,4 +1,5 @@
 com\bankapp\view\SettingsView.class
+com\bankapp\view\CreateAccountView.class
 com\bankapp\controller\DashboardController.class
 com\bankapp\view\LoginView.class
 com\bankapp\view\TransferView.class
@@ -10,4 +11,5 @@ com\bankapp\controller\TransferController.class
 com\bankapp\model\Transaction.class
 com\bankapp\service\ConnectDB.class
 com\bankapp\view\DashboardView.class
+com\bankapp\controller\AccountCreationController.class
 com\bankapp\controller\LoginController.class

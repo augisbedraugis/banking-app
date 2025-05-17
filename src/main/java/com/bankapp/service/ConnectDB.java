@@ -9,7 +9,7 @@ public class ConnectDB {
     private Connection connection;
 
     public ConnectDB() {
-        String url = "jdbc:sqlite:src/main/resources/users.db";
+        String url = "jdbc:sqlite:src/main/resources/accounts.db";
         try {
             connection = DriverManager.getConnection(url);
             System.out.println("Connected to database");

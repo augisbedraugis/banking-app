@@ -12,8 +12,6 @@ public class Main extends Application {
         BankUserDAO bankUserDAO = new BankUserDAO();
         bankUserDAO.setupDatabase();
 
-        bankUserDAO.insertUser(2, "Johnny Travolta", "hello");
-
         NavigationController.init(primaryStage);
 
         NavigationController.switchToLogin();
