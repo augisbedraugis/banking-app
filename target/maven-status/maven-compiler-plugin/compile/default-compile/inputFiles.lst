@@ -7,6 +7,8 @@ C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\ma
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\Main.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\model\Account.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\model\Transaction.java
+C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\service\BankUserDAO.java
+C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\service\ConnectDB.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\DashboardView.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\LoginView.java
 C:\Users\augus\Documents\Programming\javaProjects\banking-app\banking-app\src\main\java\com\bankapp\view\SettingsView.java
