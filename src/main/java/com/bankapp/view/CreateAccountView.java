@@ -32,7 +32,7 @@ public class CreateAccountView {
                 goBackButton
         );
 
-        return new Scene(layout, 300, 250);
+        return new Scene(layout, 300, 350);
     }
 
     public TextField getNameField() { return nameField; }

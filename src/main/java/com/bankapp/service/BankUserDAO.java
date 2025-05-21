@@ -57,6 +57,7 @@ public class BankUserDAO {
                         rs.getString("password")
                 );
                 account.setBalance(rs.getDouble("balance"));
+                account.setId(rs.getInt("id"));
                 return account;
             }
         } catch (SQLException e) {
@@ -65,37 +66,35 @@ public class BankUserDAO {
         return null;
     }
 
-
     public boolean verifyCredentials(String username, String password) {
         String query = "SELECT * FROM bankUsers WHERE userName = ? AND password = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, username);
             stmt.setString(2, password);
             ResultSet rs = stmt.executeQuery();
-            return rs.next(); // If a record exists, credentials are valid
+            return rs.next();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
     }
 
-
-    public void updateUserName(int id, String name) {
-        String updateQuery = "UPDATE bankUsers SET name = ? WHERE id = ?";
-        try (PreparedStatement stmt = connection.prepareStatement(updateQuery)) {
-            stmt.setString(1, name);
-            stmt.setInt(2, id);
+    public void updatePassword(Account account) {
+        try (PreparedStatement stmt = connection.prepareStatement(
+                "UPDATE bankUsers SET password = ? WHERE userName = ?")) {
+            stmt.setString(1, account.getPassword());
+            stmt.setString(2, account.getUsername());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public void updatePassword(int id, String password) {
-        String updateQuery = "UPDATE bankUsers SET password = ? WHERE id = ?";
-        try (PreparedStatement stmt = connection.prepareStatement(updateQuery)) {
-            stmt.setString(1, password);
-            stmt.setInt(2, id);
+    public void updateUsername(Account account) {
+        try (PreparedStatement stmt = connection.prepareStatement(
+                "UPDATE bankUsers SET userName = ? WHERE id = ?")) {
+            stmt.setString(1, account.getUsername());
+            stmt.setInt(2, account.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
