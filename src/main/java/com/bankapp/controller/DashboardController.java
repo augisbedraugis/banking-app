@@ -2,8 +2,10 @@ package com.bankapp.controller;
 
 import com.bankapp.model.Account;
 import com.bankapp.view.DashboardView;
+import com.bankapp.view.TransferView;
 import com.bankapp.view.SettingsView;
 import javafx.event.ActionEvent;
+import javafx.stage.Stage;
 
 public class DashboardController {
     private DashboardView dashboardView;
@@ -15,6 +17,8 @@ public class DashboardController {
 
         this.dashboardView.getSettingsButton().setOnAction(this::handleSettingsButton);
         this.dashboardView.getLogoutButton().setOnAction(this::handleLogoutButton);
+
+        this.dashboardView.getTransferFundsButton().setOnAction(this::handleTransferFunds);
     }
 
     private void handleSettingsButton(ActionEvent event) {
@@ -23,5 +27,13 @@ public class DashboardController {
 
     private void handleLogoutButton(ActionEvent event) {
         NavigationController.switchToLogin();
+    }
+
+    private void handleTransferFunds(ActionEvent event) {
+        TransferView transferView = new TransferView(account);
+        Stage stage = (Stage) dashboardView.getScene().getWindow();
+        stage.setScene(transferView.getScene());
+        stage.setTitle("Transfer Funds");
+        stage.show();
     }
 }

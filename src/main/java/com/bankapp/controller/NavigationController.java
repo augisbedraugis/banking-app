@@ -25,7 +25,6 @@ public class NavigationController {
 
     public static void switchToDashboard(Account account) {
         DashboardView dashboardView = new DashboardView(account);
-        // Hook up buttons
         dashboardView.getLogoutButton().setOnAction(e -> switchToLogin());
         dashboardView.getSettingsButton().setOnAction(e -> switchToSettings(account));
 

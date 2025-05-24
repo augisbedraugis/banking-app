@@ -1,5 +1,6 @@
 package com.bankapp;
 
+import com.bankapp.service.FundTransferDAO;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import com.bankapp.controller.NavigationController;
@@ -10,7 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         BankUserDAO bankUserDAO = new BankUserDAO();
+        FundTransferDAO fundTransferDAO = new FundTransferDAO();
         bankUserDAO.setupDatabase();
+        fundTransferDAO.setupDatabase();
 
         NavigationController.init(primaryStage);
 

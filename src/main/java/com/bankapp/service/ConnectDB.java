@@ -25,6 +25,7 @@ public class ConnectDB {
         try {
             if (connection != null) {
                 connection.close();
+                System.out.println("Connection closed");
             }
         } catch (SQLException e) {
             e.printStackTrace();
